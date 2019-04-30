@@ -1,5 +1,5 @@
 CREATE DATABASE bamazon;
-
+USE bamazon;
 
 
 CREATE TABLE products (
@@ -7,7 +7,7 @@ CREATE TABLE products (
 item_id INTEGER (30) AUTO_INCREMENT NOT NULL,
 product_name VARCHAR (30) NOT NULL,
 department_name VARCHAR (30) NOT NULL,
-price DECIMAL (10) NOT NULL,
+price DECIMAL (4,2) NOT NULL,
 stock_quantity INTEGER (30) NOT NULL
 
 );
@@ -23,4 +23,4 @@ VALUES ('Nike Airmax', 'Shoes', 75.00, 200),
 ('Reebok Iversons','Shoes', 120.00, 500),
 ('Adidas Snapback','Headwear',25.00, 150),
 ('Puma Sweater','Clothing', 40.00, 120),
-('Jordan Shorts','Clothing',35.00, 110),
+('Jordan Shorts','Clothing',35.00, 110);
