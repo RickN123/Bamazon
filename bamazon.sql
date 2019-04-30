@@ -4,11 +4,11 @@ CREATE DATABASE bamazon;
 
 CREATE TABLE products (
 
-item_id INTEGER (30),
-product_name VARCHAR (30),
-department_name VARCHAR (30),
-price,
-stock_quantity,
+item_id INTEGER (30) AUTO_INCREMENT NOT NULL,
+product_name VARCHAR (30) NOT NULL,
+department_name VARCHAR (30) NOT NULL,
+price DECIMAL (10) NOT NULL,
+stock_quantity INTEGER (30) NOT NULL
 
 );
 
