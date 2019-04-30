@@ -18,3 +18,26 @@ connection.connect(function (err) {
     console.log("connected as id " + connection.threadId);
     connection.end();
 });
+
+function connection.end(){
+    inquirer.prompt([
+        {
+
+            type: "input",
+            message: "What is the ID of the product you would like to purchase?",
+            validate: validateInput,
+            filter: Number
+        },
+        {
+
+
+
+
+
+        }
+
+
+    ])
+
+
+}
